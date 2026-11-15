@@ -48,10 +48,10 @@ label start:
     scene hallway at background_fit with fade
     play music "mickeyscat-summer-pulse-background-music-no-copyright-585183.mp3"
 
-    show alex at character_fit, stage_left
-    show mary at character_fit, stage_right
-    show janitor at character_fit, stage_janitor
     show principal at principal_fit, stage_principal
+    show janitor at character_fit, stage_janitor
+    show mary at character_fit, stage_right
+    show alex at character_fit, stage_left
 
     a "Okay, Alex. Deep breath. Today is the day you ask Mary to hang out."
     m "Hey, Alex. You look like you're rehearsing something."
@@ -79,10 +79,10 @@ label start:
     a "I understand. Friends is good."
 
     scene hallway at background_fit with dissolve
-    show alex at character_fit, stage_left
-    show mary at character_fit, stage_right
-    show janitor at character_fit, stage_janitor
     show principal at principal_fit, stage_principal
+    show janitor at character_fit, stage_janitor
+    show mary at character_fit, stage_right
+    show alex at character_fit, stage_left
 
     p "The floor is dry, my ankle is better, and most of the flyers survived. Now, Alex, what will you do to bounce back?"
 
