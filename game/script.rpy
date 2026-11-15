@@ -1,4 +1,4 @@
-﻿define a = Character("Alex", color="#e5aa7a")
+define a = Character("Alex", color="#e5aa7a")
 define m = Character("Mary", color="#fdd2de")
 define p = Character("Principal", color="#dec3af")
 define j = Character("Janitor", color="#ffa3b1")
@@ -42,7 +42,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene hallway with fade
+    scene hallway at background_fit with fade
     play music "mickeyscat-summer-pulse-background-music-no-copyright-585183.mp3" 
     show janitor at character_fit, stage_janitor
     show principal at character_fit, stage_principal
