@@ -1,4 +1,4 @@
-﻿define a = Character("Alex", color="#e5aa7a")
+define a = Character("Alex", color="#e5aa7a")
 define m = Character("Mary", color="#fdd2de")
 define p = Character("Principal", color="#dec3af")
 define j = Character("Janitor", color="#ffa3b1")
@@ -95,6 +95,14 @@ label start:
                 jump choice_a
             "Choice B":
                 jump choice_b
+
+label choice_a:
+    a "You chose A."
+    return
+
+label choice_b:
+    a "You chose B."
+    return
 
     # This ends the game.
 
