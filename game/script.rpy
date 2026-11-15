@@ -1,7 +1,15 @@
-﻿define a = Character("Alex", color="#e5aa7a")
+define a = Character("Alex", color="#e5aa7a")
 define m = Character("Mary", color="#fdd2de")
 define p = Character("Principal", color="#dec3af")
 define j = Character("Janitor", color="#ffa3b1")
+
+transform background_fit:
+    xysize (config.screen_width, config.screen_height)
+    fit "cover"
+
+transform character_fit:
+    xysize (config.screen_width, config.screen_height - gui.textbox_height)
+    fit "scale-down"
 
 label start:
 
@@ -9,13 +17,13 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene hallway with fade
+    scene hallway at background_fit with fade
     play music "mickeyscat-summer-pulse-background-music-no-copyright-585183.mp3" 
-    show alex with moveinleft
+    show alex at character_fit with moveinleft
 
     a "{i}Awwwww{/i}! Mary is soooooo CUTE! Yo I gotta ask her out!"
 
-    show mary with moveinright
+    show mary at character_fit with moveinright
 
     a "Oh hey Mary! I was just thinking about you!"
 
@@ -33,13 +41,13 @@ label start:
  
     m "Ah... OH NO!!! MY LIFE IS RUINED! WAH!"
 
-    show janitor with moveinright
+    show janitor at character_fit with moveinright
 
     hide alex with moveoutright
 
     j "Hey, be carful kid!"
 
-    show principal with moveinright
+    show principal at character_fit with moveinright
 
     p "Ouch! AHHHHHHH!"
 
