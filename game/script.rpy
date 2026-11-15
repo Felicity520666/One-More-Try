@@ -1,4 +1,4 @@
-define a = Character("Alex", color="#e5aa7a")
+﻿define a = Character("Alex", color="#e5aa7a")
 define m = Character("Mary", color="#fdd2de")
 define p = Character("Principal", color="#dec3af")
 define j = Character("Janitor", color="#ffa3b1")
@@ -12,7 +12,7 @@ transform background_fit:
 transform character_fit:
     ysize (config.screen_height - gui.textbox_height)
     fit "contain"
-    ypos (config.screen_height - gui.textbox_height)
+    ypos (config.screen_height - gui.textbox_height + 80)
     yanchor 1.0
 
 transform stage_left:
@@ -22,15 +22,21 @@ transform stage_right:
     xalign 0.42
 
 transform stage_janitor:
-    xalign 0.72
+    xalign 0.64
 
 transform stage_principal:
-    xalign 0.92
+    xalign 0.93
+
+transform principal_fit:
+    ysize (config.screen_height - gui.textbox_height) * 1.2
+    fit "contain"
+    ypos (config.screen_height - gui.textbox_height + 80)
+    yanchor 1.0
 
 transform alex_bump:
     ysize (config.screen_height - gui.textbox_height)
     fit "contain"
-    ypos (config.screen_height - gui.textbox_height)
+    ypos (config.screen_height - gui.textbox_height + 80)
     yanchor 1.0
     xalign 0.20
     linear 0.55 xalign 0.72
@@ -45,7 +51,7 @@ label start:
     scene hallway at background_fit with fade
     play music "mickeyscat-summer-pulse-background-music-no-copyright-585183.mp3" 
     show janitor at character_fit, stage_janitor
-    show principal at character_fit, stage_principal
+    show principal at principal_fit, stage_principal
     show alex at character_fit, stage_left with moveinleft
 
     a "{i}Awwwww{/i}! Mary is soooooo CUTE! Yo I gotta ask her out!"
@@ -81,9 +87,17 @@ label start:
 
     m "Oh no..."
 
-
-
+    
+    menu:
+        "Question 1":
+            "Choice A":
+                jump choice_a
+            "Choice B":
+                jump choice_b
 
     # This ends the game.
 
     return
+
+
+  
