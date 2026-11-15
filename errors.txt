@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 94: expected statement.
-    "Choice A":
-              ^
+File "game/script.rpy", line 160: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    color "#ff8e8e"
+                   ^
 
-File "game/script.rpy", line 96: expected statement.
-    "Choice B":
-              ^
+File "game/script.rpy", line 168: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    color "#ffd95a"
+                   ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Nov 15 02:38:30 2026
+Sun Nov 15 08:49:41 2026
