@@ -87,7 +87,8 @@ label start:
 
     m "Oh no..."
 
-    
+    p "Everyone, please just leave. especially YOU, ALex!"
+
     menu:
         "Question 1":
             "Choice A":
@@ -98,3 +99,6 @@ label start:
     # This ends the game.
 
     return
+
+    
+    

@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 101: expected statement.
+File "game/script.rpy", line 94: expected statement.
     "Choice A":
               ^
 
-File "game/script.rpy", line 103: expected statement.
+File "game/script.rpy", line 96: expected statement.
     "Choice B":
               ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Nov 15 02:11:18 2026
+Sun Nov 15 02:38:30 2026
