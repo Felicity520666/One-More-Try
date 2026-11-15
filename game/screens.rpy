@@ -36,7 +36,13 @@ style button_text is gui_text:
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
 
+style label is default:
+    properties gui.text_properties("label", accent=True)
+    color "#ffd95a"
+    yalign 0.18
+
 style prompt_text is gui_text:
+    properties gui.text_properties("prompt")
     properties gui.text_properties("prompt")
 
 
@@ -160,6 +166,7 @@ style say_dialogue:
     ypos gui.dialogue_ypos
 
     adjust_spacing False
+    yalign 0.5
 
 ## Input screen ################################################################
 ##
@@ -228,6 +235,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    yalign 0.5
 
 
 ## Quick Menu screen ###########################################################

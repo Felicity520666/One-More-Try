@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 329: end of line expected.
-    centered "TUESDAY — THE BOUNCE BACK"    p "Yesterday was embarrassing. But reputation is not one bad moment. It is what you do next."
-                                          ^
+File "game/screens.rpy", line 46: style property properties appears twice.
+    properties gui.text_properties("prompt")
+              ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Nov 15 10:57:36 2026
+Sun Nov 15 12:06:10 2026

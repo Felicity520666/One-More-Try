@@ -134,17 +134,17 @@ screen reputation_hud():
         ypadding 12
         vbox:
             spacing 5
-            text "BOUNCE BACK METER" size 22 color "#ffffff"
+            text "BOUNCE BACK METER" size 26 color "#ffffff"
             bar value StaticValue(reputation + 2, 10) xmaximum 280 ymaximum 20
-            text "REP [reputation] / 6   COURAGE [courage]" size 18 color "#dcecff"
+            text "REP [reputation] / 6   COURAGE [courage]" size 22 color "#dcecff"
             if streak >= 2:
-                text "MOMENTUM x[streak]" size 20 color "#ffdf68"
+                text "MOMENTUM x[streak]" size 24 color "#ffdf68"
             if reputation >= 6:
-                text "STATUS: COMEBACK READY" size 17 color "#80ffad"
+                text "STATUS: COMEBACK READY" size 21 color "#80ffad"
             elif reputation >= 3:
-                text "STATUS: RISING" size 17 color "#fff28a"
+                text "STATUS: RISING" size 21 color "#fff28a"
             else:
-                text "STATUS: UNDER PRESSURE" size 17 color "#ff9e9e"
+                text "STATUS: UNDER PRESSURE" size 21 color "#ff9e9e"
 
 label rep_change(amount, message):
     $ reputation += amount
