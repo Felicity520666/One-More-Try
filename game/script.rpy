@@ -1,12 +1,7 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
-# The game starts here.
+﻿define a = Character("Alex", color="#e5aa7a")
+define m = Character("Mary", color="#fdd2de")
+define p = Character("Principal", color="#dec3af")
+define j = Character("Janitor", color="#ffa3b1")
 
 label start:
 
@@ -14,19 +9,48 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene hallway with fade
+    play music "mickeyscat-summer-pulse-background-music-no-copyright-585183.mp3" 
+    show alex with moveinleft
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    a "{i}Awwwww{/i}! Mary is soooooo CUTE! Yo I gotta ask her out!"
 
-    show eileen happy
+    show mary with moveinright
 
-    # These display lines of dialogue.
+    a "Oh hey Mary! I was just thinking about you!"
 
-    e "You've created a new Ren'Py game."
+    m "Ummmm, really? Okay...?"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    a "So, I was wondering if you wanted to hang out sometime? Like maybe we could go to the movies or something?"
+
+    m "{i}Ewwww{/i}... I DO NOT think I want to hang out with you."
+
+    a "What...? You..."
+
+    m "Sorry bro, but I already have a boyfriend. Gotta go, see ya!"
+
+    hide mary with moveoutleft
+ 
+    m "Ah... OH NO!!! MY LIFE IS RUINED! WAH!"
+
+    show janitor with moveinright
+
+    hide alex with moveoutright
+
+    j "Hey, be carful kid!"
+
+    show principal with moveinright
+
+    p "Ouch! AHHHHHHH!"
+
+    j "Oh no! PRincipal! Are you still alive?! Quick! Go get a towel!"
+
+    p "YOU! You are in GREAT trouble!"
+
+    m "Oh no..."
+
+
+
 
     # This ends the game.
 
