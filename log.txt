@@ -1,21 +1,21 @@
-2026-11-15 13:50:01 UTC
+2026-11-15 16:23:04 UTC
 macOS-26.6.2-arm64-arm-64bit
 Ren'Py 8.4.1.25072401
 
 Early init took 18 ms
-Loading error handling took 9 ms
-Loading script took 65 ms
+Loading error handling took 11 ms
+Loading script took 62 ms
 Loading save slot metadata took 10 ms
 Loading persistent took 0 ms
-Running init code took 29 ms
-Loading analysis data took 3 ms
+Running init code took 14 ms
+Loading analysis data took 1 ms
 Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 0 ms
+Reloading save slot metadata took 4 ms
 Backing up script files to '/Users/felicity/Library/RenPy/backups/One More Try':
-Dump and make backups took 0 ms
+Dump and make backups took 14 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 12 ms
+Initial gc took 13 ms
 DPI scale factor: 1.000000
 Creating interface object took 0 ms
 Init translation took 0 ms
@@ -23,18 +23,24 @@ Cleaning stores took 0 ms
 Load screen analysis took 0 ms
 Analyze screens took 3 ms
 Save screen analysis took 4 ms
-Save pyanalysis took 2 ms
-Save bytecode took 12 ms
-﻿Ren'Py 8.4.1.25072401 lint report, generated at: Sun Nov 15 08:50:02 2026
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 1934 ms
 
-
-Statistics:
-
-The game contains 56 dialogue blocks, containing 496 words and 2,586
-characters, for an average of 8.9 words and 46 characters per block.
-
-The game contains 4 menus, 4 images, and 26 screens.
-
-
-Lint is not a substitute for thorough testing. Remember to update Ren'Py
-before releasing. New releases fix bugs and improve compatibility.
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1470, 956)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M4'
+Version: '2.1 Metal - 90.5'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1470, 'current_h': 956, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1470, 835) drawable=(2940, 1670)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1470, 835) drawable=(2940, 1670)
+Maximum texture size: 4096x4096
+Cleaning stores took 0 ms
+Load screen analysis took 10 ms
+Analyze screens took 0 ms
+Running _start took 1 ms
