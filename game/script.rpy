@@ -90,11 +90,13 @@ label start:
     p "Everyone, please just leave. especially YOU, ALex!"
 
     menu:
-        "Question 1":
-            "Choice A":
+        "What do you wear to school?":
+            "Something to cover your face (hat + hoodie)":
                 jump choice_a
-            "Choice B":
+            "Something bold (suit and tie)":
                 jump choice_b
+            "Something normal (bright t shirt, jeans)":
+                jump choice_c
 
     # This ends the game.
 
