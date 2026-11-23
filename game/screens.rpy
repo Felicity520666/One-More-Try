@@ -43,7 +43,6 @@ style label is default:
 
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
-    properties gui.text_properties("prompt")
 
 
 style bar:
